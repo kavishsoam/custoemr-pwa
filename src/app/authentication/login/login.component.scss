@@ -1,0 +1,64 @@
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
+    max-width: 500px;
+    margin: 0 auto;
+}
+.container h2{
+    font-family: 'Times New Roman',
+      Times, serif;
+    font-weight: bold;
+
+}
+.account{
+  color:black; 
+  text-align: center;
+}
+.account{
+    color:#91C73E; 
+    text-align: center;
+  }
+.text{
+    color:#91C73E; 
+    margin-left: 111px;
+    font-size: 14px; 
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+    margin-left: 40px;
+}
+ p {
+    font-size: 17px;
+    text-align: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 50%;
+}
+.facebookbtn{
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #007bff;
+    border-radius: 0px;
+}
+.loginbtn{
+    color: #fff;
+    /* background-color: #007bff; */
+    border-color: #007bff;
+    border-radius: 0px;
+    background-color: black;
+}
+.form-control{
+    border-radius: 0px;
+    line-height: 1.5;
+    background-color: #9B948B;
+    text-align: center;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white; 
+    font-size: 12px
+  }

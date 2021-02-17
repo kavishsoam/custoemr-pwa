@@ -1,0 +1,133 @@
+<div class="container-fluid ">
+    <div class="row bg-dark fixed-top mt-my-5">
+        <div class="col-6 text-center text-white" (click)="showContent('shop')">
+            <span >
+                Shop
+            </span>
+        </div>
+        <div class="col-6 text-center text-white" (click)="showContent('therapist')">
+            <span >
+                Therapist
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>  
+    <br>  
+    <div class="row" *ngIf="isContentType">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Shop</h5>
+                  <p class="card-text">Shop details for text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Shop treatment</h5>
+                  <p class="card-text">Shop text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Shop treatment</h5>
+                  <p class="card-text">Shop detials text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+        </div>
+    </div>
+    <div class="row" *ngIf="!isContentType">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Therapist</h5>
+                  <p class="card-text">Therapist text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Therapist title treatment</h5>
+                  <p class="card-text">Therapist supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Therapist treatment</h5>
+                  <p class="card-text">Therapist supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+        </div>
+    </div>
+</div>

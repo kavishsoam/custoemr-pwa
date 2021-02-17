@@ -1,0 +1,131 @@
+<div class="container-fluid">
+    <div class="row bg-dark fixed-top  mt-my-5">
+        <div class="col-6 text-center text-white" (click)="showContent('upcoming')">
+            <span >
+                Upcoming
+            </span>
+        </div>
+        <div class="col-6 text-center text-white" (click)="showContent('history')">
+            <span >
+                History
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>  
+    <br>
+    <div class="row" *ngIf="isContentType">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Upcoming</h5>
+                  <p class="card-text">Upcoming details for text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Upcoming treatment</h5>
+                  <p class="card-text">Upcoming text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Upcoming treatment</h5>
+                  <p class="card-text">Upcoming detials text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="!isContentType">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">History</h5>
+                  <p class="card-text">History text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">History title treatment</h5>
+                  <p class="card-text">History supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">History treatment</h5>
+                  <p class="card-text">History supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-white bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            Cancel
+                        </div>
+                        <div class="col-6">
+                            Pay
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

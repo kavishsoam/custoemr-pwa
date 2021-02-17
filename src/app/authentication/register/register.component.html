@@ -1,0 +1,108 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="mb-5 p-5 card-body">
+                <div class="text-center">
+                    <span class="text-warning"><img src="../../../assets/images/cust_icon.png"></span>
+                </div>
+
+                <!-- Start Form-->
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <!--First Name-->
+                    <div class="form-group ">
+                        <input type="text" class="form-control" formControlName="firstname" placeholder="First Name"
+                            [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+                        <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                            <div *ngIf="f.firstname.errors.required">First Name is required</div>
+                        </div>
+                    </div>
+                    <!--End First Name-->
+
+                    <!--Last Name-->
+                    <div class="form-group ">
+                        <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name"
+                            [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }">
+                        <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                            <div *ngIf="f.lastname.errors.required">Last Name is required</div>
+                        </div>
+                    </div>
+                    <!--End Last Name-->
+
+                    <!--Email-->
+                    <div class="form-group ">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Email"
+                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                        </div>
+                    </div>
+                    <!--End Email-->
+
+                    <!--Mobile-->
+                    <div class="form-group ">
+                        <input type="text" class="form-control" formControlName="mobile" placeholder="Mobile"
+                            [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }">
+                        <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                            <div *ngIf="f.mobile.errors.required">Email is required</div>
+                        </div>
+                    </div>
+                    <!--End Mobile-->
+
+                    <!--Password-->
+                    <div class="form-group ">
+                        <input type="password" class="form-control" formControlName="password" placeholder="Password"
+                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Email is required</div>
+                        </div>
+                    </div>
+                    <!--End Password-->
+
+                    <!--Confirm Password-->
+                    <div class="form-group ">
+                        <input type="password" class="form-control" formControlName="confirmpassword"
+                            placeholder="Confirm Password"
+                            [ngClass]="{ 'is-invalid': submitted && f.confirmpassword.errors }">
+                        <div *ngIf="submitted && f.confirmpassword.errors" class="invalid-feedback">
+                            <div *ngIf="f.confirmpassword.errors.required">Confirm Password is required</div>
+                        </div>
+                    </div>
+                    <!--End Password-->
+
+                    <!--Sign Up Button-->
+                    <button type="submit" class="btn btn-primary btn-block rounded-pill loginbtn" name="login">SignUp</button>
+                    <!--End Sign Up Button-->
+
+                    <div class="row py-2">
+                        <div class="col-5">
+                            <hr>
+                        </div>
+                        <div class="col-2 text-center">
+                            or
+                        </div>
+                        <div class="col-5">
+                            <hr>
+                        </div>
+                    </div>
+                </form>
+                <!--End From-->
+
+                <!-- Login With Facebook-->
+
+                <div>
+                    <a class="btn-fb">
+                        <div class="fb-content">
+                            <div class="logo">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block facebookbtn">Login in with
+                                Facebook</button>
+                        </div>
+                    </a>
+                    <h6 class="mt-5 account1 text-center"> Don't Have an account ?<a (click)="redirectLogin()" > Login</a></h6>
+                </div>
+                <!--End Login With Facebook-->
+            </div>
+        </div>
+    </div>
+</div>

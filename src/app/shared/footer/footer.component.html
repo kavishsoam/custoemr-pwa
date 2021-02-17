@@ -1,0 +1,30 @@
+<footer class="fixed-bottom bg-white" *ngIf="isHomeFooter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 text-center" (click)="navigate('home')">
+                <!-- <p>Home</p> -->
+                <!-- <button type="button" class="btn btn-outline-dark"> -->
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                <!-- </button> -->
+            </div>
+            <div class="col-3 text-center" (click)="navigate('schedule')">
+                <!-- <button type="button" class="btn btn-outline-dark"> -->
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                <!-- </button> -->
+                <!-- <p >Like</p> -->
+            </div>
+            <div class="col-3 text-center" (click)="navigate('like')">
+                <!-- <button type="button" class="btn btn-outline-dark"> -->
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <!-- </button> -->
+                <!-- <p>notification</p> -->
+            </div>
+            <div class="col-3 text-center" (click)="navigate('notifications')">
+                <!-- <button type="button" class="btn btn-outline-dark"> -->
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <!-- </button> -->
+                <!-- <p>Schedule</p> -->
+            </div>
+        </div>
+    </div>
+</footer>

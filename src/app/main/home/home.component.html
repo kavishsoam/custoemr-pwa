@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="row">
+        <div class="col-9">
+            <p>Send Gift Card</p>
+        </div>
+        <div class="col-3">
+            <i class="fa fa-gift" aria-hidden="true"></i>
+        </div>
+        </div>
+        <div class="card-data">
+            <div *ngFor="let item of categoryData" class="card-dynamic">
+                <div class="mat-card card-vertical" >
+                    <img [src]="item.image" class="card-img-new" alt="rere" (error)="setDefaultPic($event)">
+                    <h5>{{item?.name}}</h5>
+                  </div>
+                <!-- <app-dynamic-card [componentData]="categoryList.image" [componentImage]="categoryList"></app-dynamic-card> -->
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <h5>Recently Viewed</h5>
+          </div>
+          <div class="col-4">
+            <h6>View All</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div  class="scrolling-wrapper row flex-row flex-nowrap  pb-4  pl-3">
+            <ng-container *ngFor="let item of recentlyViewed">
+              <div class="col-8">
+                <div class="card card-block card-horiz">
+                  <img src="../../../assets/images/cust_icon.png" class="card-img-horiz">
+                  <div class="card-bottom-text">
+                    <span class="bottom-header">Zen Body Massage</span>
+                    <p><i class="fa fa-star" aria-hidden="true"></i>
+                      0.0 0 Ratings</p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <br>
+          </div>
+        </div>
+    </div>

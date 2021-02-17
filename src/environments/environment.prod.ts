@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  hmr: false,
+  api_url: "https://app.thebookus.com:44300/api/",
+  image_url : "https://app.thebookus.com:44300"
 };
