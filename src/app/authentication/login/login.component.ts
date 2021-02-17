@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
       console.log(res);
       localStorage.setItem('customerLogin',JSON.stringify(res))
       localStorage.setItem('customerToken',res.token);
-      this.route.navigateByUrl('main/home')
+      this.route.navigateByUrl('main/home');
     },err=>{
       console.log(err);
     })
